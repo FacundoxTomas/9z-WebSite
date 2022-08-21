@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Tienda Oficial - 9z WebSite</title>
     <link rel="shortcut icon" href="LOGO 9Z.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
@@ -15,28 +17,43 @@
         <nav>
             <a href="">
                 <img class="encabezado-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"
-                    alt="logo de 9z">
-            </a>
-            <ul class="navbar">
-                <li> <a href="../index.html">INICIO</a> </li>
-                <li> <a href="./equipos.html">EQUIPOS</a> </li>
-                <li> <a href="./tienda.html">TIENDA</a> </li>
-                <li> <a href="./contacto.html">CONTACTO</a> </li>
-                <li> <a href="./9zarmy.html">9zARMY</a> </li>
+                    alt="logo de 9z"></a>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/equipos.html">Equipos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/tienda.html">Tienda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/pages/9zarmy.html">9zArmy</a>
+                </li>
+
             </ul>
         </nav>
     </header>
     <main>
-        <section class="contenedor-camiseta">
-            <h1>RESERVÁ YA LA NUEVA CAMISETA DE LA VIOLETA!</h1>
-            <div class="card-camiseta">
-                <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/03042699087485.5eeacf5845527.png"
-                    width="500px" height="500px" alt="camiseta oficial de 9z">
+        <div class="card mb-5" style="max-width: 540px;">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/03042699087485.5eeacf5845527.png" class="img-fluid rounded-start" alt="Camiseta9z">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">RESERVÁ YA LA NUEVA CAMISETA DE LA VIOLETA!</h5>
+                        <p class="card-text"> Disfrutá de la camiseta 2022 de 9z con la nueva tegnologia fit-dry
+                        </p>
+                        <a href="#" class="btn btn-primary">RESERVAR</a>
+                    </div>
+                </div>
             </div>
-            <div class="button">
-                <input type="button" value="RESERVAR">
-            </div>
-        </section>
+        </div>
     </main>
     <footer class="pie-de-pagina">
         <a class="textoDos" href="https://twitter.com/9zTeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
@@ -45,6 +62,10 @@
         <a class="textoDos" href="https://www.youtube.com/c/9zTeam/featured"> Youtube</a>
         <p class="textoDos">©2022 Copyright Facundo Tomás Muñoz</p>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
 </body>
 
 </html>
