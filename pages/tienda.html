@@ -8,48 +8,81 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>Tienda Oficial - 9z WebSite</title>
-    <link rel="shortcut icon" href="LOGO 9Z.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/LOGO 9Z.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
-    <header>
-        <nav>
+    <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container-fluid">
             <a href="">
                 <img class="encabezado-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"
-                    alt="logo de 9z"></a>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/equipos.html">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/9zarmy.html">9zArmy</a>
-                </li>
-
-            </ul>
-        </nav>
+                    alt="logo de 9z">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./tienda.html">Tienda</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./9zarmy.html">Comunidad</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
     </header>
     <main>
-        <div class="card mb-5" style="max-width: 540px;">
-            <div class="row g-0">
-                <div class="col-md-4">
-                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/03042699087485.5eeacf5845527.png" class="img-fluid rounded-start" alt="Camiseta9z">
-                </div>
-                <div class="col-md-8">
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/2800_opt_1/03042699087485.5eeacf5845527.png"
+                        class="card-img-top" alt="...">
                     <div class="card-body">
-                        <h5 class="card-title">RESERVÁ YA LA NUEVA CAMISETA DE LA VIOLETA!</h5>
-                        <p class="card-text"> Disfrutá de la camiseta 2022 de 9z con la nueva tegnologia fit-dry
-                        </p>
-                        <a href="#" class="btn btn-primary">RESERVAR</a>
+                        <h5 class="card-title">Camiseta Titular</h5>
+                        <p class="card-text">Creada para envolver a los hinchas en comodidad,esta camiseta incorpora tecnología de absorción AEROREADY. Hecho con materiales 100% reciclados,este producto representa solo una de nuestras soluciones para ayudar a acabar con los residuos de plásticos.</p>
+                    </div>
+                    <div>
+                        <button> Reservar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/18cfff99087485.5eeacbd5717bb.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Alternativa</h5>
+                        <p class="card-text"> Elegida especialmente por nuestra comunidad, simple y minimalista.</p>
+                    </div>
+                    <div>
+                        <button> Reservar </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100">
+                    <img src="https://mir-s3-cdn-cf.behance.net/project_modules/1400/d2aef299087485.5eeacbd5d4427.png"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Camiseta Alternativa</h5>
+                        <p class="card-text">Creada para envolver a los hinchas en comodidad,esta camiseta incorpora tecnología de absorción AEROREADY. Hecho con materiales 100% reciclados,este producto representa solo una de nuestras soluciones para ayudar a acabar con los residuos de plásticos.</p>
+                    </div>
+                    <div>
+                        <button> Reservar </button>
                     </div>
                 </div>
             </div>

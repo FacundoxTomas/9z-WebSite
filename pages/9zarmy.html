@@ -9,80 +9,91 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <title>9z army - 9z WebSite</title>
-    <link rel="shortcut icon" href="LOGO 9Z.png" type="image/x-icon">
+    <link rel="shortcut icon" href="/img/LOGO 9Z.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
     <header>
-        <nav>
-            <a href="">
-                <img class="encabezado-img" src="https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png"
-                    alt="logo de 9z"></a>
-            <ul class="nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/index.html">Inicio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/equipos.html">Equipos</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/tienda.html">Tienda</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/contacto.html">Contacto</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/pages/9zarmy.html">9zArmy</a>
-                </li>
-
-            </ul>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a href="">
+                    <img class="encabezado-img"
+                        src="https://upload.wikimedia.org/wikipedia/commons/6/6f/9zteam_logo.png" alt="logo de 9z">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./equipos.html">Equipos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./tienda.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./contacto.html">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./9zarmy.html">Comunidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
-        <div class="formulario">
-            <div>
-                <div>
-                    <h1>¿Que es 9z army?</h1>
-                    <p>Estamos construyendo una comunidad de fanáticos y fanáticas por los videojuegos, el streaming y
-                        los
-                        esports
-                        y queremos que formes parte de ella.</p>
+        <section class="contact-box">
+            <div class="row no-gutters bg-dark">
+                <div class="col-xl-5 col-lg-12 register-bg">
+                    <div class="position-absolute testiomonial p-4">
+                        <h3 class="font-weight-bold text-light">Estamos construyendo una comunidad</h3>
+                        <p class="lead text-light">Y queremos que formes parte de ella.</p>
+                    </div>
                 </div>
-                <form>
-                    <div>
-                        <legend>Ingresá tus datos acá</legend>
+                <div class="col-xl-7 col-lg-12 d-flex">
+                    <div class="container align-self-center p-6">
+                        <h1 class="font-weight-bold mb-3">Unite a #LaVioleta</h1>
+                        <p class="text-muted mb-5">Ingresa la siguiente información para registrarte.</p>
+
+                        <form>
+                            <div class="form-row mb-2">
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold">Nombre <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Tu nombre">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label class="font-weight-bold">Apellido <span class="text-danger">*</span></label>
+                                    <input type="text" class="form-control" placeholder="Tu apellido">
+                                </div>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Correo electrónico <span
+                                        class="text-danger">*</span></label>
+                                <input type="email" class="form-control" placeholder="Ingresa tu correo electrónico">
+                            </div>
+                            <div class="form-group mb-3">
+                                <label class="font-weight-bold">Contraseña <span class="text-danger">*</span></label>
+                                <input type="password" class="form-control" placeholder="Ingresa una contraseña">
+                            </div>
+                            <div class="form-group mb-5">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox">
+                                    <label class="form-check-label text-muted">Al seleccionar esta casilla aceptas
+                                        nuestro aviso de privacidad y los términos y condiciones</label>
+                                </div>
+                            </div>
+                            <button class="width-100">Regístrate</button>
+                        </form>
                     </div>
-                    <div class="contenedor-formulario">
-                        <label for="">Usuario:</label>
-                        <input type="text" placeholder="Usuario">
-                    </div>
-                    <div class="contenedor-formulario">
-                        <label for="">Contraseña:</label>
-                        <input type="password" placeholder="Contraseña">
-                    </div>
-                    <div class="contenedor-formulario">
-                        <label for="">Email:</label>
-                        <input type="text" placeholder="Email">
-                    </div>
-                    <div class="contenedor-formulario">
-                        <label for="">Fecha de Nacimiento:</label>
-                        <input type="text" placeholder="Fecha de Nacimiento">
-                    </div>
-                    <div class="checkbox">
-                        <label for="">Acepto los términos y condiciones</label>
-                        <input type="checkbox" name="" id="">
-                    </div>
-                    <div>
-                        <input type="submit" value="Enviar">
-                    </div>
-            </div>
-            </form>
-            <div class="seccion-img">
-                <div class="wallpaper-team">
-                    <img src="../img/DlzQPsyWsAA1t07.png" alt="wallpaper 9z">
                 </div>
             </div>
+        </section>
     </main>
     <footer class="pie-de-pagina">
         <a class="textoDos" href="https://twitter.com/9zTeam?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor">
