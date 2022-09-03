@@ -12,7 +12,6 @@
     width: 3rem;
 }
 
-
 .nav-item a {
     font-size: 1.3rem;
     color: #974ce2;
@@ -49,6 +48,15 @@ footer {
     border-radius: 40px;
     font-weight: bold;
     padding: 20px;
+    width: 550px;
+    height: 500px;
+    background: rgb(46, 44, 44);
+    transition: all 300ms;
+}
+
+.card:hover {
+    opacity: 0.8;
+    transform: scale(1.10);
 }
 
 
@@ -59,10 +67,6 @@ h1 {
     font-weight: bold;
 }
 
-.card {
-    background-color: #020024;
-}
-
 
 .card-text {
     color: #e0e0e0;
@@ -71,6 +75,24 @@ h1 {
 h5 {
     color: #e0e0e0;
     font-weight: bold;
+}
+
+.camiseta {
+    border-radius: 40px;
+    font-weight: bold;
+    padding: 20px;
+    transition: all .3s;
+    background-color: #020024;
+    text-align: justify;
+}
+
+.col:hover {
+    transform: scale(0.98);
+    border-radius: 10px;
+}
+
+.camiseta:hover {
+    box-shadow: 0px 0px 30px 1px rgb(132, 2, 238);
 }
 
 .pie-de-pagina {
@@ -107,13 +129,12 @@ h5 {
 
 button {
     --color: #560bad;
-    font-family: inherit;
     display: inline-block;
     width: 8em;
     height: 2.6em;
     line-height: 2.5em;
     margin: 20px;
-    position: relative;
+    position:relative;
     overflow: hidden;
     border: 2px solid var(--color);
     transition: color .5s;
@@ -225,11 +246,11 @@ body {
 }
 
 .bg-light {
-    background-color: var(--color-light)!important;
+    background-color: var(--color-light) !important;
 }
 
 .bg-dark {
-    background-color: var(--color-dark)!important;
+    background-color: var(--color-dark) !important;
 }
 
 .p-6 {
@@ -261,7 +282,7 @@ body {
 
 .register-bg {
     background-image: url(/img/FU48K8i.jpeg);
-    background-size:contain;
+    background-size: contain;
     background-repeat: no-repeat;
     min-height: 100vh;
 }
@@ -284,7 +305,7 @@ body {
     }
 }
 
-@media (max-width: 1200px) { 
+@media (max-width: 1200px) {
     .register-bg {
         min-height: 50vh;
     }
